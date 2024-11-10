@@ -12,7 +12,7 @@
     <link href="~/Content/assets/img/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
-    
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
@@ -25,7 +25,8 @@
     <link href="~/Content/assets//lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="~/Content/assets//css/style.css" rel="stylesheet">
+    <link href="~/Content/assets/css/style.css" rel="stylesheet">
+    <link href="~/Content/assets/css/stylelogin.css" rel="stylesheet">
 </head>
 
 <body>
@@ -46,8 +47,8 @@
                     <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown">My Account</button>
                         <div class="dropdown-menu dropdown-menu-right">
-                            <button class="dropdown-item" type="button">Sign in</button>
-                            <button class="dropdown-item" type="button">Sign up</button>
+                            <a href="@Url.Action("Login", "Auth")"><button class="dropdown-item" type="button">Sign in</button>
+                            <a href="@Url.Action("Register", "Auth")"><button class="dropdown-item" type="button">Sign up</button>
                         </div>
                     </div>
                     <div class="btn-group mx-2">
